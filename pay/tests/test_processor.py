@@ -21,7 +21,7 @@ def payment_processor() -> PaymentProcessor:
 def test_invalid_api_key() -> None:
     with pytest.raises(ValueError):
         card = CreditCard("1249190007575069", 12, CC_YEAR)
-        PaymentProcessor("").charge(card, 100)
+        PaymentProcessor(api_key="xxx").charge(card, 100)
 
 
 def test_card_number_valid_date(payment_processor: PaymentProcessor) -> None:
