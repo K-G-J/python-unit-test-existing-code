@@ -3,7 +3,7 @@ from datetime import date
 
 import pytest
 from dotenv import load_dotenv
-from pay.card import CreditCard
+from pay.credit_card import CreditCard
 from pay.processor import PaymentProcessor, luhn_checksum
 
 load_dotenv()

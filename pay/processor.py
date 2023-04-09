@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from pay.card import CreditCard
+from pay.credit_card import CreditCard
 
 
 class PaymentProcessor:
